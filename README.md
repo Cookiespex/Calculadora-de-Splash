@@ -1,7 +1,9 @@
 # osrs
 
-Valores:
-1.Cantidad d/c &nbsp;
-2.Costo &nbsp;
-3.Costo p/c &nbsp;
-4.ETA
+Este es un Calculador de Magia para OSRS
+
+## Programado en:
+* Javacript
+* Html
+* Css
+* NodeJs y Json
