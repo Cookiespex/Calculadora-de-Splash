@@ -1,4 +1,4 @@
-# osrs
+# Calculador de Splash
 
 Este es un Calculador de Magia para OSRS
 
@@ -7,3 +7,6 @@ Este es un Calculador de Magia para OSRS
 * Html
 * Css
 * NodeJs y Json
+* Bootstrap
+
+Link a la página presione [aquí](https://cookiespex.github.io/Calculadora-de-Splash/.)
