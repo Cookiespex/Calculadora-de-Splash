@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans','Helvetica Neue','Arial',sans-serif;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    color: #d9e1e8;
+}
+
+form{
+    text-align: center;
+    padding: 1rem;
+}
+
+th, td {
+    padding: 0 .5rem;
+}
+
+p, label{
+    text-align: justify;
+    color: #000;
+    font-weight: 300;
+}
+
+h4{
+    padding: .5rem 0rem;
+    color: #000;
+    font-weight: 300;
+}
+
+b{
+    font-size: .8rem;
+}
+
+#fondo{
+    background: url(../img/fondo.png) no-repeat center;
+    width: 100%;
+    height: 100vh;
+}
+
+#bus{
+    display: block;
+}
+
+#enviar {
+    margin: 1rem 0 2rem;
+    width: 8rem;
+}
+
+#nivelact, #expact, #objetivo {
+    padding: .5rem;
+    margin: 0 0 .5rem 0;
+    width: 16rem;
+}
+
+#carita {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    font-size: 9px;
+    color: #fff;
+}
+
+.byby {
+    font-family: monospace;
+    font-size: 40%;
+    font-weight: 100;
+}
+
+.cont{
+    background: rgba(136, 125, 125, 0.5);
+}
+
+.imageIcono {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 1rem .7rem 1rem 0;
+}

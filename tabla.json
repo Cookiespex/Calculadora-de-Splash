@@ -1,0 +1,497 @@
+[
+    {
+        "level": 1,
+        "exp": 0,
+        "exp diff": "N/A"
+    },
+    {
+        "level": 26,
+        "exp": 8740,
+        "exp diff": 898
+    },
+    {
+        "level": 51,
+        "exp": 111945,
+        "exp diff": 10612
+    },
+    {
+        "level": 76,
+        "exp": 1336443,
+        "exp diff": 126022
+    },
+    {
+        "level": 2,
+        "exp": 83,
+        "exp diff": 83
+    },
+    {
+        "level": 27,
+        "exp": 9730,
+        "exp diff": 990
+    },
+    {
+        "level": 52,
+        "exp": 123660,
+        "exp diff": 11715
+    },
+    {
+        "level": 77,
+        "exp": 1475581,
+        "exp diff": 139138
+    },
+    {
+        "level": 3,
+        "exp": 174,
+        "exp diff": 91
+    },
+    {
+        "level": 28,
+        "exp": 10824,
+        "exp diff": 1094
+    },
+    {
+        "level": 53,
+        "exp": 136594,
+        "exp diff": 12934
+    },
+    {
+        "level": 78,
+        "exp": 1629200,
+        "exp diff": 153619
+    },
+    {
+        "level": 4,
+        "exp": 276,
+        "exp diff": 102
+    },
+    {
+        "level": 29,
+        "exp": 12031,
+        "exp diff": 1207
+    },
+    {
+        "level": 54,
+        "exp": 150872,
+        "exp diff": 14278
+    },
+    {
+        "level": 79,
+        "exp": 1798808,
+        "exp diff": 169608
+    },
+    {
+        "level": 5,
+        "exp": 388,
+        "exp diff": 112
+    },
+    {
+        "level": 30,
+        "exp": 13363,
+        "exp diff": 1332
+    },
+    {
+        "level": 55,
+        "exp": 166636,
+        "exp diff": 15764
+    },
+    {
+        "level": 80,
+        "exp": 1986068,
+        "exp diff": 187260
+    },
+    {
+        "level": 6,
+        "exp": 512,
+        "exp diff": 124
+    },
+    {
+        "level": 31,
+        "exp": 14833,
+        "exp diff": 1470
+    },
+    {
+        "level": 56,
+        "exp": 184040,
+        "exp diff": 17404
+    },
+    {
+        "level": 81,
+        "exp": 2192818,
+        "exp diff": 206750
+    },
+    {
+        "level": 7,
+        "exp": 650,
+        "exp diff": 138
+    },
+    {
+        "level": 32,
+        "exp": 16456,
+        "exp diff": 1623
+    },
+    {
+        "level": 57,
+        "exp": 203254,
+        "exp diff": 19214
+    },
+    {
+        "level": 82,
+        "exp": 2421087,
+        "exp diff": 228269
+    },
+    {
+        "level": 8,
+        "exp": 801,
+        "exp diff": 151
+    },
+    {
+        "level": 33,
+        "exp": 18247,
+        "exp diff": 1791
+    },
+    {
+        "level": 58,
+        "exp": 224466,
+        "exp diff": 21212
+    },
+    {
+        "level": 83,
+        "exp": 2673114,
+        "exp diff": 252027
+    },
+    {
+        "level": 9,
+        "exp": 969,
+        "exp diff": 168
+    },
+    {
+        "level": 34,
+        "exp": 20224,
+        "exp diff": 1977
+    },
+    {
+        "level": 59,
+        "exp": 247886,
+        "exp diff": 23420
+    },
+    {
+        "level": 84,
+        "exp": 2951373,
+        "exp diff": 278259
+    },
+    {
+        "level": 10,
+        "exp": 1154,
+        "exp diff": 185
+    },
+    {
+        "level": 35,
+        "exp": 22406,
+        "exp diff": 2182
+    },
+    {
+        "level": 60,
+        "exp": 273742,
+        "exp diff": 25856
+    },
+    {
+        "level": 85,
+        "exp": 3258594,
+        "exp diff": 307221
+    },
+    {
+        "level": 11,
+        "exp": 1358,
+        "exp diff": 204
+    },
+    {
+        "level": 36,
+        "exp": 24815,
+        "exp diff": 2409
+    },
+    {
+        "level": 61,
+        "exp": 302288,
+        "exp diff": 28546
+    },
+    {
+        "level": 86,
+        "exp": 3597792,
+        "exp diff": 339198
+    },
+    {
+        "level": 12,
+        "exp": 1584,
+        "exp diff": 226
+    },
+    {
+        "level": 37,
+        "exp": 27473,
+        "exp diff": 2658
+    },
+    {
+        "level": 62,
+        "exp": 333804,
+        "exp diff": 31516
+    },
+    {
+        "level": 87,
+        "exp": 3972294,
+        "exp diff": 374502
+    },
+    {
+        "level": 13,
+        "exp": 1833,
+        "exp diff": 249
+    },
+    {
+        "level": 38,
+        "exp": 30408,
+        "exp diff": 2935
+    },
+    {
+        "level": 63,
+        "exp": 368599,
+        "exp diff": 34795
+    },
+    {
+        "level": 88,
+        "exp": 4385776,
+        "exp diff": 413482
+    },
+    {
+        "level": 14,
+        "exp": 2107,
+        "exp diff": 274
+    },
+    {
+        "level": 39,
+        "exp": 33648,
+        "exp diff": 3240
+    },
+    {
+        "level": 64,
+        "exp": 407015,
+        "exp diff": 38416
+    },
+    {
+        "level": 89,
+        "exp": 4842295,
+        "exp diff": 456519
+    },
+    {
+        "level": 15,
+        "exp": 2411,
+        "exp diff": 304
+    },
+    {
+        "level": 40,
+        "exp": 37224,
+        "exp diff": 3576
+    },
+    {
+        "level": 65,
+        "exp": 449428,
+        "exp diff": 42413
+    },
+    {
+        "level": 90,
+        "exp": 5346332,
+        "exp diff": 504037
+    },
+    {
+        "level": 16,
+        "exp": 2746,
+        "exp diff": 335
+    },
+    {
+        "level": 41,
+        "exp": 41171,
+        "exp diff": 3947
+    },
+    {
+        "level": 66,
+        "exp": 496254,
+        "exp diff": 46826
+    },
+    {
+        "level": 91,
+        "exp": 5902831,
+        "exp diff": 556499
+    },
+    {
+        "level": 17,
+        "exp": 3115,
+        "exp diff": 369
+    },
+    {
+        "level": 42,
+        "exp": 45529,
+        "exp diff": 4358
+    },
+    {
+        "level": 67,
+        "exp": 547953,
+        "exp diff": 51699
+    },
+    {
+        "level": 92,
+        "exp": 6517253,
+        "exp diff": 614422
+    },
+    {
+        "level": 18,
+        "exp": 3523,
+        "exp diff": 408
+    },
+    {
+        "level": 43,
+        "exp": 50339,
+        "exp diff": 4810
+    },
+    {
+        "level": 68,
+        "exp": 605032,
+        "exp diff": 57079
+    },
+    {
+        "level": 93,
+        "exp": 7195629,
+        "exp diff": 678376
+    },
+    {
+        "level": 19,
+        "exp": 3973,
+        "exp diff": 450
+    },
+    {
+        "level": 44,
+        "exp": 55649,
+        "exp diff": 5310
+    },
+    {
+        "level": 69,
+        "exp": 668051,
+        "exp diff": 63019
+    },
+    {
+        "level": 94,
+        "exp": 7944614,
+        "exp diff": 748985
+    },
+    {
+        "level": 20,
+        "exp": 4470,
+        "exp diff": 497
+    },
+    {
+        "level": 45,
+        "exp": 61512,
+        "exp diff": 5863
+    },
+    {
+        "level": 70,
+        "exp": 737627,
+        "exp diff": 69576
+    },
+    {
+        "level": 95,
+        "exp": 8771558,
+        "exp diff": 826944
+    },
+    {
+        "level": 21,
+        "exp": 5018,
+        "exp diff": 548
+    },
+    {
+        "level": 46,
+        "exp": 67983,
+        "exp diff": 6471
+    },
+    {
+        "level": 71,
+        "exp": 814445,
+        "exp diff": 76818
+    },
+    {
+        "level": 96,
+        "exp": 9684577,
+        "exp diff": 913019
+    },
+    {
+        "level": 22,
+        "exp": 5624,
+        "exp diff": 606
+    },
+    {
+        "level": 47,
+        "exp": 75127,
+        "exp diff": 7144
+    },
+    {
+        "level": 72,
+        "exp": 899257,
+        "exp diff": 84812
+    },
+    {
+        "level": 97,
+        "exp": 10692629,
+        "exp diff": 1008052
+    },
+    {
+        "level": 23,
+        "exp": 6291,
+        "exp diff": 667
+    },
+    {
+        "level": 48,
+        "exp": 83014,
+        "exp diff": 7887
+    },
+    {
+        "level": 73,
+        "exp": 992895,
+        "exp diff": 93638
+    },
+    {
+        "level": 98,
+        "exp": 11805606,
+        "exp diff": 1112977
+    },
+    {
+        "level": 24,
+        "exp": 7028,
+        "exp diff": 737
+    },
+    {
+        "level": 49,
+        "exp": 91721,
+        "exp diff": 8707
+    },
+    {
+        "level": 74,
+        "exp": 1096278,
+        "exp diff": 103383
+    },
+    {
+        "level": 99,
+        "exp": 13034431,
+        "exp diff": 1228825
+    },
+    {
+        "level": 25,
+        "exp": 7842,
+        "exp diff": 814
+    },
+    {
+        "level": 50,
+        "exp": 101333,
+        "exp diff": 9612
+    },
+    {
+        "level": 75,
+        "exp": 1210421,
+        "exp diff": 114143
+    }
+]

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="osrs" />
+    <meta name="author" content="Cookies Pex" />
+    <link rel="icon" href="">
+    <!--Style sheet-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>OSRS Aplication</title>
+</head>
+
+<body>
+    <div id="fondo">
+        <div class="container">
+            <h1>Calculador de Splash <b class="byby">by Cookies Pex</b></h1>
+            <div class="cont">
+                <div class="container">
+                    <form id="formulario" class="row">
+                        <div class="col-lg-2">
+                            <p><label for="nivelact">Nivel Actual:</label></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <input class="form-control" type="text" name="nivelact" id="nivelact"
+                                placeholder="Ingrese su nivel actual" onchange="nivelActual(this);" />
+                        </div>
+                        <div class="col-lg-1">
+                            <p style="text-align: center;">ó</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <p><label for="expact">Exp Actual:</label></p>
+                        </div>
+                        <div class="col-lg-4">
+                            <input class="form-control" type="text" name="expact" id="expact"
+                                placeholder="Ingrese su exp actual(Sin signos de puntuacion)"
+                                onchange="experenciaActual(this);" />
+                        </div>
+
+                        <div class="col-lg-2">
+                            <p><label for="objetivo">Objetivo*:</label></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <input class="form-control" type="text" name="objetivo" id="objetivo"
+                                placeholder="Ingrese el objetivo a alacanzar" onchange="objetivoAlcanzar(this);"
+                                required />
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2">
+                            <p><label for="usuario">Buscar Usuario:</label></p>
+                        </div>
+                        <div class="input-group col-lg-4">
+                            <input type="text" class="form-control" id="usuario" name="usuario"
+                                placeholder="Ej: Cookiespex9">
+                            <div class="input-group-append" id="bus">
+                                <button class="btn btn-outline-light" id="buscar" type="button">Buscar</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <button class="btn btn-outline-light" type="submit" id="enviar" name="enviar"
+                                onclick="imprimir()">Enviar</button>
+                        </div>
+                        <!--<input type="submit" id="enviar" name="enviar" value="Enviar" onclick="enviar(this)" />-->
+                    </form>
+                </div>
+
+                <div id="resultado" class="container">
+                    <div class="row">
+                        <div class="contResultado col-lg-3">
+                            <article>
+                                <h4>Fire Strike <img src="img/Fire_Strike_icon.webp"></h4>
+                                <p>
+                                    <img class="imageIcono" src="img/120px-Mind_rune_detail.webp">
+                                    Cantidad d/c: <span id="cantm" class="cantidad"></span> <br />
+                                    Costo: <span id="costom" class="costo"></span> <b>gp</b> <br />
+                                    Costo p/c: <span id="costopcm" class="costopc"></span> <b>gp</b> <br />
+                                    ETA: <span id="etam" class="eta"></span> <b>/horas</b> <br />
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="contResultado col-lg-3">
+                            <article>
+                                <h4>Fire Bolt <img src="img/Fire_Bolt_icon.webp"></h4>
+                                <p>
+                                    <img class="imageIcono" src="img/120px-Chaos_rune_detail.webp">
+                                    Cantidad d/c: <span id="cantc" class="cantidad"></span> <br />
+                                    Costo: <span id="costoc" class="costo"></span> <b>gp</b> <br />
+                                    Costo p/c: <span id="costopcc" class="costopc"></span> <b>gp</b> <br />
+                                    ETA: <span id="etac" class="eta"></span> <b>/horas</b> <br />
+                                </p>
+                            </article>
+                        </div>
+                        <div class="contResultado col-lg-3">
+                            <article>
+                                <h4>Fire Blast <img src="img/Fire_Blast_icon.webp"></h4>
+                                <p>
+                                    <img class="imageIcono" src="img/120px-Death_rune_detail.webp">
+                                    Cantidad d/c: <span id="cantd" class="cantidad"></span> <br />
+                                    Costo: <span id="costod" class="costo"></span> <b>gp</b> <br />
+                                    Costo p/c: <span id="costopcd" class="costopc"></span> <b>gp</b> <br />
+                                    ETA: <span id="etad" class="eta"></span> <b>/horas</b> <br />
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="contResultado col-lg-3">
+                            <article>
+                                <h4>Fire Wave <img src="img/Fire_Wave_icon.webp"></h4>
+                                <p>
+                                    <img class="imageIcono" src="img/120px-Blood_rune_detail.webp">
+                                    Cantidad d/c: <span id="cantb" class="cantidad"></span> <br />
+                                    Costo: <span id="costob" class="costo"></span> <b>gp</b> <br />
+                                    Costo p/c: <span id="costopcb" class="costopc"></span> <b>gp</b> <br />
+                                    ETA: <span id="etab" class="eta"></span> <b>/horas</b> <br />
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carita">:V</div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('#formulario').on('submit', function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+    <script>
+        function audio(e) {
+            let reproducir = new Audio();
+            reproducir.src = e;
+            reproducir.play();
+        }
+        window.addEventListener("load", function() {
+            document.querySelector("#carita").addEventListener('onclick', function() {
+                audio('audio/Litaliano.mp3');
+            }, false)
+        }, false)
+    </script>
+</body>
+
+</html>
