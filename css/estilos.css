@@ -26,6 +26,7 @@ p, label{
     text-align: justify;
     color: #000;
     font-weight: 300;
+    font-size: 1rem;
 }
 
 h4{
@@ -39,9 +40,9 @@ b{
 }
 
 #fondo{
-    background: url(../img/fondo.png) no-repeat center;
+    background: url(../img/fondo.png) center;
     width: 100%;
-    height: 100vh;
+    height: 85rem;
 }
 
 #bus{
@@ -82,4 +83,50 @@ b{
     height: 60px;
     float: left;
     margin: 1rem .7rem 1rem 0;
+}
+
+/*---------------------------------------------
+                MEDIAS QUERYS
+----------------------------------------------*/
+@media (min-width: 576px) {  /*sm*/
+    p{
+        font-size: .85rem;
+    }
+
+    #fondo{
+        background: url(../img/fondo.png) no-repeat center;
+        height: 52rem;
+    }
+}
+  
+@media (min-width: 768px) {  /*md*/
+    p{
+        font-size: 1rem;
+    }
+
+    #fondo{
+        height: 45rem;
+    }
+
+    #nivelact, #expact, #objetivo {
+        padding: .5rem;
+        margin: 0 0 .5rem 0;
+        width: 100%;
+    }
+}
+  
+@media (min-width: 992px) { /*lg*/
+    #fondo{
+        background: url(../img/fondo.png) no-repeat center;
+        width: 100%;
+        height: 100vh;
+    }
+}
+  
+@media (min-width: 1200px) { /*xl*/
+    #fondo{
+        background: url(../img/fondo.png) no-repeat center;
+        width: 100%;
+        height: 100vh;
+    }
 }

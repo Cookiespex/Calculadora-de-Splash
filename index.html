@@ -22,45 +22,45 @@
             <div class="cont">
                 <div class="container">
                     <form id="formulario" class="row">
-                        <div class="col-lg-2">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
                             <p><label for="nivelact">Nivel Actual:</label></p>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 col-12">
                             <input class="form-control" type="text" name="nivelact" id="nivelact"
                                 placeholder="Ingrese su nivel actual" onchange="nivelActual(this);" />
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12">
                             <p style="text-align: center;">ó</p>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
                             <p><label for="expact">Exp Actual:</label></p>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12">
                             <input class="form-control" type="text" name="expact" id="expact"
                                 placeholder="Ingrese su exp actual(Sin signos de puntuacion)"
                                 onchange="experenciaActual(this);" />
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
                             <p><label for="objetivo">Objetivo*:</label></p>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-9 col-12">
                             <input class="form-control" type="text" name="objetivo" id="objetivo"
                                 placeholder="Ingrese el objetivo a alacanzar" onchange="objetivoAlcanzar(this);"
-                                required />
+                                 />
                         </div>
-                        <div class="col-lg-1"></div>
-                        <div class="col-lg-2">
+                        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12"></div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
                             <p><label for="usuario">Buscar Usuario:</label></p>
                         </div>
-                        <div class="input-group col-lg-4">
-                            <input type="text" class="form-control" id="usuario" name="usuario"
+                        <div class="input-group col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12">
+                            <input type="text" class="form-control" id="usuariobuscar" name="usuariobuscar"
                                 placeholder="Ej: Cookiespex9">
                             <div class="input-group-append" id="bus">
                                 <button class="btn btn-outline-light" id="buscar" type="button">Buscar</button>
                             </div>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <button class="btn btn-outline-light" type="submit" id="enviar" name="enviar"
                                 onclick="imprimir()">Enviar</button>
                         </div>
@@ -70,10 +70,10 @@
 
                 <div id="resultado" class="container">
                     <div class="row">
-                        <div class="contResultado col-lg-3">
+                        <div class="contResultado col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                             <article>
                                 <h4>Fire Strike <img src="img/Fire_Strike_icon.webp"></h4>
-                                <p>
+                                <p id="parrafom">
                                     <img class="imageIcono" src="img/120px-Mind_rune_detail.webp">
                                     Cantidad d/c: <span id="cantm" class="cantidad"></span> <br />
                                     Costo: <span id="costom" class="costo"></span> <b>gp</b> <br />
@@ -83,10 +83,10 @@
                             </article>
                         </div>
 
-                        <div class="contResultado col-lg-3">
+                        <div class="contResultado col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                             <article>
                                 <h4>Fire Bolt <img src="img/Fire_Bolt_icon.webp"></h4>
-                                <p>
+                                <p id="parrafoc">
                                     <img class="imageIcono" src="img/120px-Chaos_rune_detail.webp">
                                     Cantidad d/c: <span id="cantc" class="cantidad"></span> <br />
                                     Costo: <span id="costoc" class="costo"></span> <b>gp</b> <br />
@@ -95,10 +95,10 @@
                                 </p>
                             </article>
                         </div>
-                        <div class="contResultado col-lg-3">
+                        <div class="contResultado col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                             <article>
                                 <h4>Fire Blast <img src="img/Fire_Blast_icon.webp"></h4>
-                                <p>
+                                <p id="parrafod">
                                     <img class="imageIcono" src="img/120px-Death_rune_detail.webp">
                                     Cantidad d/c: <span id="cantd" class="cantidad"></span> <br />
                                     Costo: <span id="costod" class="costo"></span> <b>gp</b> <br />
@@ -108,10 +108,10 @@
                             </article>
                         </div>
 
-                        <div class="contResultado col-lg-3">
+                        <div class="contResultado col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                             <article>
                                 <h4>Fire Wave <img src="img/Fire_Wave_icon.webp"></h4>
-                                <p>
+                                <p id="parrafob">
                                     <img class="imageIcono" src="img/120px-Blood_rune_detail.webp">
                                     Cantidad d/c: <span id="cantb" class="cantidad"></span> <br />
                                     Costo: <span id="costob" class="costo"></span> <b>gp</b> <br />
@@ -124,6 +124,7 @@
                 </div>
             </div>
         </div>
+
         <div id="carita">:V</div>
     </div>
 
@@ -144,8 +145,9 @@
             reproducir.play();
         }
         window.addEventListener("load", function() {
-            document.querySelector("#carita").addEventListener('onclick', function() {
+            document.querySelector("#carita").addEventListener('click', function() {
                 audio('audio/Litaliano.mp3');
+                console.log('hola :v');
             }, false)
         }, false)
     </script>
