@@ -23,6 +23,26 @@
                 <div class="container">
                     <form id="formulario" class="row">
                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+                            <p><label for="objetivo">Objetivo*:</label></p>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-9 col-12">
+                            <input class="form-control" type="text" name="objetivo" id="objetivo"
+                                placeholder="Ingrese el objetivo a alacanzar" onchange="objetivoAlcanzar(this);" />
+                        </div>
+                        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12"></div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+                            <p><label for="usuario">Buscar Usuario:</label></p>
+                        </div>
+                        <div class="input-group col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12">
+                            <input type="text" class="form-control" id="usuariobuscar" name="usuariobuscar"
+                                placeholder="Ej: Cookiespex9">
+                            <div class="input-group-append" id="bus">
+                                <button class="btn btn-outline-light" id="buscar" type="button"
+                                    onclick="buscarUsuario();">Buscar</button>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
                             <p><label for="nivelact">Nivel Actual:</label></p>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 col-12">
@@ -40,31 +60,13 @@
                                 placeholder="Ingrese su exp actual(Sin signos de puntuacion)"
                                 onchange="experenciaActual(this);" />
                         </div>
-
-                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                            <p><label for="objetivo">Objetivo*:</label></p>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-9 col-12">
-                            <input class="form-control" type="text" name="objetivo" id="objetivo"
-                                placeholder="Ingrese el objetivo a alacanzar" onchange="objetivoAlcanzar(this);"
-                                 />
-                        </div>
-                        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-12"></div>
-                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                            <p><label for="usuario">Buscar Usuario:</label></p>
-                        </div>
-                        <div class="input-group col-xl-4 col-lg-4 col-md-4 col-sm-10 col-12">
-                            <input type="text" class="form-control" id="usuariobuscar" name="usuariobuscar"
-                                placeholder="Ej: Cookiespex9">
-                            <div class="input-group-append" id="bus">
-                                <button class="btn btn-outline-light" id="buscar" type="button">Buscar</button>
-                            </div>
-                        </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <button class="btn btn-outline-light" type="submit" id="enviar" name="enviar"
                                 onclick="imprimir()">Enviar</button>
                         </div>
                         <!--<input type="submit" id="enviar" name="enviar" value="Enviar" onclick="enviar(this)" />-->
+                        <div id="mensaje" class="mensaje col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">Su nivel actual
+                            no puede usar los spells en rojo</div>
                     </form>
                 </div>
 
@@ -144,8 +146,8 @@
             reproducir.src = e;
             reproducir.play();
         }
-        window.addEventListener("load", function() {
-            document.querySelector("#carita").addEventListener('click', function() {
+        window.addEventListener("load", function () {
+            document.querySelector("#carita").addEventListener('click', function () {
                 audio('audio/Litaliano.mp3');
                 console.log('hola :v');
             }, false)

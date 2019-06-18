@@ -68,6 +68,12 @@ b{
     color: #fff;
 }
 
+#mensaje{
+    text-align: center;
+    color: #800;
+    display: none;
+}
+
 .byby {
     font-family: monospace;
     font-size: 40%;
