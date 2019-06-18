@@ -64,10 +64,10 @@ function objetivoAlcanzar(para) {
         if (nivel < obj) {
             return obj;
         } else {
-            alert('El objetivo tiene que ser mayor que el nivel')
+            alert('El objetivo tiene que ser mayor que el nivel');
         }
     } else {
-        alert('Ingrese un objetivo menor a 100')
+        alert('Ingrese un objetivo menor a 100');
     }
 }
 
@@ -130,7 +130,7 @@ function autorizarNivel() {
             parrafob.style.color = "black";
             mensaje.style.display = 'none';
         }
-
+        
     }
 }
 
@@ -221,13 +221,15 @@ function imprimir() {
         .catch(error => {
             console.log(error)
         })
+
+    buscarUsuario();
 }
 
 function buscarUsuario() {
 
     let ur = 'https://cors-anywhere.herokuapp.com/http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player='
 
-    let usuariobuscar = document.querySelector('#usuariobusca')
+    let usuariobuscar = document.querySelector('#usuariobusca');
     usuariobuscar = usuariobuscar.value;
     window.localStorage.getItem('usuariobuscar') || '';
 
