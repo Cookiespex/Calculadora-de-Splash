@@ -229,7 +229,7 @@ function buscarUsuario() {
 
     let ur = 'https://cors-anywhere.herokuapp.com/http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player='
 
-    let usuariobuscar = document.querySelector('#usuariobusca');
+    let usuariobuscar = document.querySelector('#usuariobussca');
     usuariobuscar = usuariobuscar.value;
     window.localStorage.getItem('usuariobuscar') || '';
 
@@ -264,7 +264,7 @@ function buscarUsuario() {
                             console.log(magianl)
 
                             $(document).ready(function () {
-                                $("#nivelactu").val(magianl)
+                                $("#nivelactul").val(magianl)
                             })
 
                             let magiaexp = cor[16].split('\n')[0];
@@ -276,7 +276,7 @@ function buscarUsuario() {
                             console.log(exp)
 
                             $(document).ready(function () {
-                                $("#expactu").val(exp)
+                                $("#expactul").val(exp)
                             })
 
                             ope = objobje - exp;
