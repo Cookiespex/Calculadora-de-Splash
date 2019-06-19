@@ -3,13 +3,13 @@ let nivel = null;
 let exp = null;
 let obj = null;
 let ope = null;
-//Variables de suma de 1 solo costo
-let min = 5;
-let air = 5;
-let fir = 5;
-let cha = 99;
-let dea = 213;
-let blo = 360;
+//Variables de runes
+let min = null;
+let cha = null;
+let dea = null;
+let blo = null;
+let air = null;
+let fir = null;
 //Variables de las operaciones
 let cantidadm = document.getElementById('cantm');
 let cantidadc = document.getElementById('cantc');
@@ -279,14 +279,88 @@ function imprimir() {
         .catch(error => {
             console.log(error)
         })
-        setTimeout(buscarUsuario, 1000)
+    setTimeout(buscarUsuario, 2000);
+    setTimeout(runes, 2000);
+}
+
+function runes() {
+
+    let urlurl = 'https://cors-anywhere.herokuapp.com/http://services.runescape.com/m=itemdb_oldschool/api/catalogue/detail.json?item='
+
+    fetch(urlurl + '558')
+        .then(res => {
+            return res.json();
+        })
+        .then(dat => {
+            min = dat.item.current.price;
+            return min
+        }).catch(error => { console.log(error) });
+
+    fetch(urlurl + '562')
+        .then(res => {
+            return res.json();
+        })
+        .then(dat => {
+            cha = dat.item.current.price;
+            return cha;
+        }).catch(error => { console.log(error) });
+
+    fetch(urlurl + '560')
+        .then(res => {
+            return res.json();
+        })
+        .then(dat => {
+            dea = dat.item.current.price;
+            return dea;
+        }).catch(error => { console.log(error) });
+
+    fetch(urlurl + '565')
+        .then(res => {
+            return res.json();
+        })
+        .then(dat => {
+            blo = dat.item.current.price;
+            return blo;
+        }).catch(error => { console.log(error) })
+
+    fetch(urlurl + '554')
+        .then(res => {
+            return res.json();
+        })
+        .then(dat => {
+            fir = dat.item.current.price;
+            return fir;
+        }).catch(error => { console.log(error) })
+
+    let urlur = 'https://cors-anywhere.herokuapp.com/http://services.runescape.com/m=itemdb_oldschool/api/catalogue/items.json?category=1&alpha=air%20rune&page=1'
+
+    fetch(urlur)
+        .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            for (const i in data) {
+                if (data.hasOwnProperty(i)) {
+                    const element = data[i];
+                    for (const j in element) {
+                        if (element.hasOwnProperty(j)) {
+                            air = element[j].current.price;
+                            return air;
+                        }
+                    }
+                }
+            }
+        })
+        .catch(error => {
+            console.log(error)
+        })
 }
 
 function buscarUsuario() {
 
-    let ur = 'https://cors-anywhere.herokuapp.com/http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player='
+    let ur = 'https://cors-anywhere.herokuapp.com/http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player=';
 
-    let usuariobuscar = document.querySelector('#usuariobusscarr');
+    let usuariobuscar = document.querySelector('#usuariobusscrr');
     usuariobuscar = usuariobuscar.value;
     window.localStorage.getItem('usuariobuscar') || '';
     if (!usuariobuscar) {
@@ -321,7 +395,7 @@ function buscarUsuario() {
 
                             let magianl = parseInt(cor[15], 10); //nivel actual
                             $(document).ready(function () {
-                                $("#nivelactul").val(magianl)
+                                $("#nivelactull").val(magianl)
                             })
 
                             let magiaexp = cor[16].split('\n')[0];
