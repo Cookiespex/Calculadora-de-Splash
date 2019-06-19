@@ -279,14 +279,14 @@ function imprimir() {
         .catch(error => {
             console.log(error)
         })
-    buscarUsuario();
+        setTimeout(buscarUsuario, 1000)
 }
 
 function buscarUsuario() {
 
     let ur = 'https://cors-anywhere.herokuapp.com/http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player='
 
-    let usuariobuscar = document.querySelector('#usuariobusscar');
+    let usuariobuscar = document.querySelector('#usuariobusscarr');
     usuariobuscar = usuariobuscar.value;
     window.localStorage.getItem('usuariobuscar') || '';
     if (!usuariobuscar) {
@@ -309,6 +309,7 @@ function buscarUsuario() {
                                 mensaje.style.display = 'block';
                                 mensaje.innerHTML = 'El usuario "' + usuariobuscar + '" no existe o esta mal escrito';
                             } else {
+                                mensaje.style.display = 'none';
                                 return res.text();
                             }
                         })
@@ -331,7 +332,7 @@ function buscarUsuario() {
 
                             exp = parseInt(magiaexp, 10) //Experencia actual
                             $(document).ready(function () {
-                                $("#expactul").val(exp)
+                                $("#expactull").val(exp)
                             })
 
                             ope = objobje - exp;
