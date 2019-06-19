@@ -1,3 +1,4 @@
+setTimeout(runes, 3000)
 //Variables
 let nivel = null;
 let exp = null;
@@ -206,7 +207,7 @@ function imprimir() {
                                         let opeobje = datos[i].exp;
                                         if (opeobjn === obj || opeobje === obj) {
                                             if (nivel < obj) {
-                                                ope = opeobje - opeexp;
+                                                ope = opeobje - opeexp || opeobjn - nivel;
                                                 $(document).ready(function () {
                                                     cantidadm = parseInt(ope / 11.5);
                                                     cantidadc = parseInt(ope / 22.5);
@@ -227,7 +228,7 @@ function imprimir() {
                                                         $("#etad").html(etad.toFixed(1));
                                                         $("#etab").html(etab.toFixed(1));
                                                     });
-
+                                                    runes();
                                                     costopcm = (min + (3 * fir) + (2 * air));//29 cost
                                                     costopcc = cha + (4 * fir) + (3 * air);//134 cost
                                                     costopcd = dea + (5 * fir) + (4 * air);//258 cost
@@ -280,11 +281,10 @@ function imprimir() {
             console.log(error)
         })
     setTimeout(buscarUsuario, 2000);
-    setTimeout(runes, 2000);
+    //setTimeout(runes, 1000);
 }
 
 function runes() {
-
     let urlurl = 'https://cors-anywhere.herokuapp.com/http://services.runescape.com/m=itemdb_oldschool/api/catalogue/detail.json?item='
 
     fetch(urlurl + '558')
@@ -357,7 +357,7 @@ function runes() {
 }
 
 function buscarUsuario() {
-
+    //setTimeout(runes, 2000);
     let ur = 'https://cors-anywhere.herokuapp.com/http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player=';
 
     let usuariobuscar = document.querySelector('#usuariobusscrr');
